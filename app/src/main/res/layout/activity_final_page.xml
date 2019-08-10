@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".finalPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Name:"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvFamily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_margin="20dp"
+            android:text="Family:"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvFamily"
+            android:layout_margin="20dp"
+            android:text="Phone:"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPhone"
+            android:layout_margin="20dp"
+            android:text="Age:"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAge"
+            android:layout_margin="20dp"
+            android:text="Address:"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvNa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_toEndOf="@id/tvName"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/tvFa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/tvName"
+            android:layout_toEndOf="@id/tvFamily"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/tvPh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/tvFamily"
+            android:layout_toEndOf="@id/tvPhone"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/tvAg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/tvPhone"
+            android:layout_toEndOf="@id/tvAge"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/tvAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/tvAge"
+            android:layout_toEndOf="@id/tvAddress"
+            android:textColor="#ffffff"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_below="@id/tvAddress"
+            android:layout_margin="20dp"
+            android:text="Confirm"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_below="@id/tvAddress"
+                android:layout_margin="20dp"
+                android:layout_toEndOf="@id/btnConfirm"
+                android:text="Edit"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
