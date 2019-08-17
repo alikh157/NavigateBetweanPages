@@ -3,6 +3,7 @@
     package="com.example.navigatebetweanpages">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,16 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".finalPage"></activity>
-        <activity android:name=".profilePage" />
-        <activity android:name=".dialPage" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".TestRecycler">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".finalPage" />
+        <activity android:name=".profilePage" />
+        <activity android:name=".dialPage" />
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 
